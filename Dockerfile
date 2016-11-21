@@ -1,6 +1,6 @@
 FROM tomcat:7-jre7
 MAINTAINER bkasodariya@gmail.com
  
-COPY ./test/ /usr/local/tomcat/webapps/
+COPY ./ /usr/local/tomcat/webapps/sample/
 
 CMD ["catalina.sh", "run"] 
