@@ -1,3 +1,4 @@
-image: dockerfile/nginx
-script:
-  - echo hello world
+build:
+  image: maven:3.3.3-jdk-8-onbuild
+  commands:
+	- mvn clean install -Dgpg.skip=true
